@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanna Eat</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <app-bar></app-bar>
+    </header>
+    <main>
+      <hero-section class="wrapper"></hero-section>
+      <section id="dailymenu" class="generate-meals">
+        <get-meals class="wrapper"></get-meals>
+        <meal-list></meal-list>
+      </section>
+      <section id="categories" class="categories-meals wrapper">
+        <div class="swiper categoriesSwiper">
+          <categories-list></categories-list>
+          <div class="swiper-pagination"></div>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-controls="Previous slide"
+          ></button>
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-controls="Next slide"
+          ></button>
+        </div>
+        <meals-category></meals-category>
+      </section>
+
+      <section id="about" class="about wrapper">
+        <about-page></about-page>
+      </section>
+    </main>
+
+    <footer class="wrapper">
+      <footer-bar></footer-bar>
+    </footer>
+  </body>
+</html>
